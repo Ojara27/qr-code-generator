@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+   
+    <header>
+        <div class="logo">
+            <h1>QrCode Generator</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="left">
+            <h1>Qr code Generator</h1>
+            <p>QR Codes allow smartphone users to access your website simply and quickly.</p>
+            <p>Enter your URL below to generate a QR Code and download the image</p>
+
+            <form action="" id="generate-form">
+                <input type="text" name="" id="url" placeholder="Enter url">
+                <select name="" id="size">
+                    <option value="100">100X100</option>
+                    <option value="200">200x200</option>
+                    <option value="300">300x300</option>
+                    <option value="400">400x400</option>
+                    <option value="500">500x500</option>
+                    <option value="600">600x600</option>
+                    <option value="700">700x700</option>
+                </select>
+                <input type="submit" value="Generate QR Code">
+            </form>
+        </div>
+
+        <div class="right">
+           <div class="image-con">
+            <img src="/images/image.jpg" alt="">
+           </div>
+        </div>
+    </main>
+
+    <!-- Generated Qr code -->
+    <div class="gnerated-code" id="generated">
+        <!-- spinner -->
+        <div class="spinner-container" id="spinner">
+            <div class="loader">
+            </div>
+            <span>loading....</span>
+          </div>
+        <!-- generated code output -->
+        <div id="qrcode" class="code">
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Designed and built by<a href="mailto:ojarafavour@yahoo.com"> Ojara </a></p>
+        <a class="git" href=""><i class="ri-github-fill"></i></a>
+        
+    </footer>
+<script src="/app.js"></script>
+</body>
+</html>
